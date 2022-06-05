@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryLifeWatcher.Service", "BatteryLifeWatcher.Service\BatteryLifeWatcher.Service.csproj", "{F9F626F3-DDBC-4D34-BE4E-F49A0AA4EACB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryLifeWatcher.Core", "BatteryLifeWatcher.Core\BatteryLifeWatcher.Core.csproj", "{6307488D-4DD3-45C3-96FB-2C5C3FA6F619}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatteryLifeWatcher.Core", "BatteryLifeWatcher.Shared\BatteryLifeWatcher.Core.csproj", "{6307488D-4DD3-45C3-96FB-2C5C3FA6F619}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
