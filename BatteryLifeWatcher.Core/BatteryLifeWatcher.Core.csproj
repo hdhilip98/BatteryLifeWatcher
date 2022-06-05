@@ -7,8 +7,8 @@
     <ProjectGuid>{6307488D-4DD3-45C3-96FB-2C5C3FA6F619}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BatteryLifeWatcher.Shared</RootNamespace>
-    <AssemblyName>BatteryLifeWatcher.Shared</AssemblyName>
+    <RootNamespace>BatteryLifeWatcher.Core</RootNamespace>
+    <AssemblyName>BatteryLifeWatcher.Core</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,11 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="stateless, Version=4.0.0.0, Culture=neutral, PublicKeyToken=93038f0927583c9a, processorArchitecture=MSIL">
-      <HintPath>..\packages\stateless.5.11.0\lib\net472\stateless.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,15 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\BatteryHelpers.cs" />
+    <Compile Include="Services\AlarmService.cs" />
+    <Compile Include="Services\BatteryService.cs" />
+    <Compile Include="States\Alarm\IAlarmState.cs" />
+    <Compile Include="States\Alarm\Off.cs" />
+    <Compile Include="States\Alarm\On.cs" />
+    <Compile Include="States\Battery\High.cs" />
+    <Compile Include="States\Battery\IBatteryState.cs" />
+    <Compile Include="States\Battery\Low.cs" />
+    <Compile Include="States\Battery\Normal.cs" />
     <Compile Include="Watcher.cs" />
     <Compile Include="WatcherConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Machines\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

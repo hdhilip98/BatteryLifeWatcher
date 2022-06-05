@@ -7,7 +7,7 @@
     <ProjectGuid>{F9F626F3-DDBC-4D34-BE4E-F49A0AA4EACB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>BatteryLifeWatcher.Service</RootNamespace>
-    <AssemblyName>BatteryLifeWatcher.Service</AssemblyName>
+    <AssemblyName>BatteryLifeWatcher</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

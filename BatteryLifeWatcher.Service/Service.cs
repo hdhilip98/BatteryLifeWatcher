@@ -9,11 +9,14 @@ namespace BatteryLifeWatcher.Service {
         public void Start() {
             var config = LoadConfiguration();
             _watcher = new Watcher(config);
+            _watcher.Start();
         }
+
         public void Stop() {
             _watcher.Stop();
             _watcher = null;
         }
+
         private WatcherConfig LoadConfiguration() {
             var serviceDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             var configPath = Path.Combine(serviceDir, "WatcherConfig.json");

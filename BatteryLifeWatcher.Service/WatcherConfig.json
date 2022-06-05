@@ -1,5 +1,4 @@
 {
-  "PollingInterval": 2000,
   "MinPowerLevel": 0.2,
   "MaxPowerLevel": 0.8,
   "SoundPath": "C:\\Windows\\Media\\Alarm05.wav"
